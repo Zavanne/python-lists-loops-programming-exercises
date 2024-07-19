@@ -9,6 +9,11 @@ tasks = [
 	{ "label": 'Make a trip', "done": False }
 ]
 
-
 # Your code here
 
+
+done_tasks = list(filter( lambda task: task['done'] == True, tasks))
+print(done_tasks)
+
+done_tasks_two = [task for task in tasks if task['done'] == True]
+print(done_tasks_two)
